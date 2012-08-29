@@ -1,0 +1,24 @@
+body, html{ margin:0; padding:0;}
+body{ font-family:"myriad Pro", "Myriad Pro Cond", "Myriad Pro Light", arial; background:url(../images/bg.png);}
+#wrapper{ width:320px; margin:0 auto;}
+#header{ padding:20px 0; background:#fff url(../images/header-bg.jpg) bottom repeat-x; text-align:center;}
+.logiForm{ padding:20px}
+.logiForm h2{ color:#fff; margin:5px 0 15px 0; font-size:22px; font-weight:normal; }
+.logiForm input[type=text],.logiForm input[type=password]{ width:90%; font-size:16px; color:#839850 !important; font-family:"myriad Pro", "Myriad Pro Cond", "Myriad Pro Light", arial; background:#daf59d; border:3px solid #647e29; height:20px; margin-bottom:18px; border-radius:5px; padding:10px;}
+.submit{ width:100%; text-align:center; margin-top:5px; color:#435e07; background: #bdf13f; padding:0; /* Old browsers */
+			background: -moz-linear-gradient(top,  #bdf13f 0%, #76a408 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bdf13f), color-stop(100%,#76a408)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #bdf13f 0%,#76a408 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #bdf13f 0%,#76a408 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #bdf13f 0%,#76a408 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #bdf13f 0%,#76a408 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bdf13f', endColorstr='#76a408',GradientType=0 ); /* IE6-9 */
+			height:42px;
+			border:1px solid #738417;
+			border-bottom:3px solid #3e5708;
+			border-radius:4px;
+}
+
+.submit:active{
+	background:#a5d630;
+}

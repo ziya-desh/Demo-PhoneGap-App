@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title>PhoneGap</title>
+  <link href="css/mobileCSS.css" rel="stylesheet" type="text/css" />	
+  <script type="text/javascript" charset="utf-8" src="cordova-1.5.0.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script>
+	function sendRequest()
+	{
+		var xmlHttp = new XMLHttpRequest();
+		var username = $('#Username').val();
+		var password = $('#Password').val();
+		xmlHttp.open( "POST", "http://192.168.1.4:8080/MEAP/AcceptReuqestFromMobileDemo.jsp", false );		
+		//xmlHttp.send("{\"username\" : \"abhishek@meap.com\", \"password\" : \"Temppassword4\"}");		
+		xmlHttp.send("{\"username\" : \"" + username + "\", \"password\" : \"" + password + "\"}");		
+		alert(xmlHttp.responseText);
+	}
+  </script>
+ </head>
+ <body>
+<div id="header">
+       <img src="images/logo.png" width="187" height="47" alt="" /></div>
+       </div>
+
+<div id="wrapper">
+      <form class="logiForm">
+            <h2>Login</h2>
+            <input name="Username" type="text" value="" placeholder="Username" id="Username"/>
+            <input name="Password" type="password" value=""  placeholder="Password" id="Password"/>
+	    <input name="Submit" Value="Login" type="button" class="submit" onclick="sendRequest()" />
+      </form>
+     
+</div>
+ </body>
+</html>
